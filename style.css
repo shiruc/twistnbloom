@@ -1,45 +1,73 @@
+/* General Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff8f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8f0;
     color: #333;
     text-align: center;
 }
 
+/* Header */
 header {
-    background-color: #ffdee9;
+    background-color: #ff8fab;
+    color: white;
     padding: 30px 10px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 3em;
-    color: #c94f7c;
+header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
-.about, .products, .contact {
+header p {
+    font-size: 20px;
+}
+
+/* About Section */
+.about {
     padding: 40px 20px;
 }
 
-.about h2, .products h2, .contact h2 {
-    color: #d63d74;
+.about h2 {
+    font-size: 30px;
+    color: #ff5e78;
+    margin-bottom: 10px;
 }
 
+.about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Product Section */
+.products {
+    padding: 40px 20px;
+}
+
+.products h2 {
+    font-size: 30px;
+    color: #ff5e78;
+    margin-bottom: 20px;
+}
+
+/* Gallery */
 .gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 20px;
+    padding: 10px;
 }
 
 .gallery img {
-    width: 200px;
+    width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #d63d74;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
 }
 
@@ -47,36 +75,34 @@ h1 {
     transform: scale(1.05);
 }
 
+/* Contact Button */
 .btn {
-    display: inline-block;
-    background-color: #d63d74;
+    background-color: #25D366;
     color: white;
-    padding: 12px 25px;
-    margin-top: 10px;
+    padding: 15px 30px;
     text-decoration: none;
-    border-radius: 25px;
-    font-size: 18px;
+    font-size: 20px;
+    border-radius: 30px;
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #c33665;
+    background-color: #128c7e;
 }
 
-.insta {
-    background-color: #833AB4;
-}
-
-.insta:hover {
-    background-color: #6f2c91;
-}
-
+/* Footer */
 footer {
-    text-align: center;
-    font-size: 14px;
-    color: #777;
-    background-color: #f2f2f2;
+    background-color: #ff8fab;
+    color: white;
     padding: 20px 10px;
-    margin-top: 50px;
-    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 5px 0;
 }
