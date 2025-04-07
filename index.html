@@ -67,4 +67,15 @@
         }
     </script>
 </body>
+    <div id="full-image" onclick="this.style.display='none'">
+    <img src="">
+</div>
+
+<script>
+  function viewImage(src){
+    document.querySelector('#full-image img').src = src;
+    document.getElementById('full-image').style.display = 'flex';
+  }
+</script>
+
 </html>
