@@ -3,42 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twist'n'Bloom - Handmade Flowers & Home Decor</title>
+    <title>Twist'n'Bloom - Handmade Flowers Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <h1>Twist'n'Bloom 🌸</h1>
         <p>Handmade Flowers for Every Moment</p>
     </header>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm the creator of Twist'n'Bloom — I love making handmade flowers & home décor with pipe cleaners. Every piece is made with love & creativity to add beauty to your moments.</p>
-    </section>
-
     <section class="products">
-        <h2>Our Creations</h2>
-        <div class="gallery">
-            <img src="image0.jpeg" alt="Product 0">
-            <img src="image1.jpeg" alt="Product 1">
-            <img src="image2.jpeg" alt="Product 2">
-            <img src="image3.jpeg" alt="Product 3">
+
+        <div class="product">
+            <img src="image0.jpeg" alt="Example Flower 0" onclick="viewImage(this.src)">
+            <h2>Example Flower 1</h2>
+            <p>Price: ₹200</p>
+            <a href="https://wa.me/917300724344?text=I want to buy Example Flower 1" target="_blank">Order on WhatsApp</a>
         </div>
+
+        <div class="product">
+            <img src="image1.jpeg" alt="Example Flower 1" onclick="viewImage(this.src)">
+            <h2>Example Flower 2</h2>
+            <p>Price: ₹250</p>
+            <a href="https://wa.me/917300724344?text=I want to buy Example Flower 2" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="image2.jpeg" alt="Example Flower 2" onclick="viewImage(this.src)">
+            <h2>Example Flower 3</h2>
+            <p>Price: ₹300</p>
+            <a href="https://wa.me/917300724344?text=I want to buy Example Flower 3" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="image3.jpeg" alt="Example Flower 3" onclick="viewImage(this.src)">
+            <h2>Example Flower 4</h2>
+            <p>Price: ₹400</p>
+            <a href="https://wa.me/917300724344?text=I want to buy Example Flower 4" target="_blank">Order on WhatsApp</a>
+        </div>
+
     </section>
 
-    <section class="contact">
-        <h2>Order Now</h2>
-        <a href="https://wa.me/917300724344" target="_blank" class="btn">Order on WhatsApp</a>
-        <br><br>
-        <a href="https://www.instagram.com/twistnbloom_india?igsh=YThleGl1ODM4M3gz" target="_blank" class="btn insta">Follow on Instagram</a>
-    </section>
+    <div id="overlay" onclick="closeImage()">
+        <img id="fullImage">
+    </div>
 
     <footer>
-        <p>© 2025 Twist'n'Bloom | Handmade Flowers for Every Moment</p>
-        <p>Made with ❤️ in India</p>
+        <p>Follow us on <a href="https://www.instagram.com/twistnbloom_india?igsh=YThleGl1ODM4M3gz" target="_blank">Instagram</a></p>
     </footer>
 
+    <script>
+        function viewImage(src) {
+            document.getElementById('fullImage').src = src;
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function closeImage() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
