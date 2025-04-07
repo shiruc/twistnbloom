@@ -3,79 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twist'n'Bloom - Handmade Flowers Store</title>
+    <title>Twist'n'Bloom - Handmade Flowers & Decor</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <header>
         <h1>Twist'n'Bloom 🌸</h1>
         <p>Handmade Flowers for Every Moment</p>
     </header>
 
+    <!-- About Me Section -->
     <section class="about">
         <h2>About Me</h2>
         <p>Hi! I'm the creator of Twist'n'Bloom — I love making handmade flowers & home décor with pipe cleaners. Every piece is made with love & creativity to add beauty to your moments.</p>
         <a href="https://www.instagram.com/twistnbloom_india?igsh=YThleGl1ODM4M3gz" target="_blank">Follow on Instagram</a>
     </section>
 
+    <!-- Products Section -->
     <section class="products">
         <h2>Our Products</h2>
 
         <div class="product">
-            <img src="image0.jpeg" alt="Example Flower 0" onclick="viewImage(this.src)">
+            <img src="image0.jpeg" alt="Example Flower 0" onclick="openImage(this.src)">
             <h3>Example Flower 1</h3>
             <p>Price: ₹200</p>
-            <a href="https://wa.me/917300724344?text=I want to buy Example Flower 1" target="_blank">Order on WhatsApp</a>
+            <a href="https://wa.me/917300724344?text=I want to order Example Flower 1 (₹200)" target="_blank">Order on WhatsApp</a>
         </div>
 
         <div class="product">
-            <img src="image1.jpeg" alt="Example Flower 1" onclick="viewImage(this.src)">
+            <img src="image1.jpeg" alt="Example Flower 1" onclick="openImage(this.src)">
             <h3>Example Flower 2</h3>
             <p>Price: ₹250</p>
-            <a href="https://wa.me/917300724344?text=I want to buy Example Flower 2" target="_blank">Order on WhatsApp</a>
+            <a href="https://wa.me/917300724344?text=I want to order Example Flower 2 (₹250)" target="_blank">Order on WhatsApp</a>
         </div>
 
         <div class="product">
-            <img src="image2.jpeg" alt="Example Flower 2" onclick="viewImage(this.src)">
+            <img src="image2.jpeg" alt="Example Flower 2" onclick="openImage(this.src)">
             <h3>Example Flower 3</h3>
             <p>Price: ₹300</p>
-            <a href="https://wa.me/917300724344?text=I want to buy Example Flower 3" target="_blank">Order on WhatsApp</a>
+            <a href="https://wa.me/917300724344?text=I want to order Example Flower 3 (₹300)" target="_blank">Order on WhatsApp</a>
         </div>
 
         <div class="product">
-            <img src="image3.jpeg" alt="Example Flower 3" onclick="viewImage(this.src)">
+            <img src="image3.jpeg" alt="Example Flower 3" onclick="openImage(this.src)">
             <h3>Example Flower 4</h3>
             <p>Price: ₹400</p>
-            <a href="https://wa.me/917300724344?text=I want to buy Example Flower 4" target="_blank">Order on WhatsApp</a>
+            <a href="https://wa.me/917300724344?text=I want to order Example Flower 4 (₹400)" target="_blank">Order on WhatsApp</a>
         </div>
 
     </section>
 
-    <div class="popup" id="popup" onclick="closePopup()">
-        <img id="popupImg">
-    </div>
+    <p style="margin-top: 30px; color: #888;">© 2025 Twist'n'Bloom. All Rights Reserved.</p>
 
     <script>
-        function viewImage(src) {
-            document.getElementById("popupImg").src = src;
-            document.getElementById("popup").style.display = "flex";
-        }
-
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
+      function openImage(src) {
+        const newTab = window.open();
+        newTab.document.write('<img src="' + src + '" style="width:100%">');
+      }
     </script>
+
 </body>
-    <div id="full-image" onclick="this.style.display='none'">
-    <img src="">
-</div>
-
-<script>
-  function viewImage(src){
-    document.querySelector('#full-image img').src = src;
-    document.getElementById('full-image').style.display = 'flex';
-  }
-</script>
-
 </html>
