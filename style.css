@@ -61,3 +61,24 @@ footer {
   color: #999;
   font-size: 16px;
 }
+h2 {
+  color: #e91e63;
+  margin-top: 40px;
+}
+
+p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+a img {
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.2);
+}
+
