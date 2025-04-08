@@ -3,129 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twist n Bloom - Handmade Flowers & Decor</title>
+    <title>Twist'n'Bloom - Flowers & Home Decor Art</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
     <header>
-        <h1>Twist n Bloom 🌸</h1>
-        <p>Handmade Flowers for Every Moment</p>
+        <img src="logo.png" alt="Twist'n'Bloom Logo" class="logo">
+        <h1>Welcome to Twist'n'Bloom 🌸</h1>
+        <p>We create beautiful flowers & home decor items with love using pipe cleaner!</p>
     </header>
 
-    <!-- About Me Section -->
     <section class="about">
         <h2>About Me</h2>
-        <p>Hi! I'm the creator of Twist n Bloom — I love making handmade flowers & home décor with pipe cleaners. Every piece is made with love & creativity to add beauty to your moments.</p>
+        <p>Hi! I'm the creator of Twist'n'Bloom — I love making handmade flowers & home décor with pipe cleaners. Every piece is made with love & creativity to add beauty to your moments.</p>
         <a href="https://www.instagram.com/twistnbloom_india?igsh=YThleGl1ODM4M3gz" target="_blank">Follow on Instagram</a>
     </section>
 
-    <!-- Products Section -->
     <section class="products">
         <h2>Our Products</h2>
 
+        <!-- Product 0 -->
         <div class="product">
-            <img src="image0.jpeg" alt="Example Flower 0" onclick="openImage(this.src)">
-            <h3>Example Flower 1</h3>
+            <img src="image0.jpeg" onclick="openImage(this.src)" alt="Example Flower 0">
+            <h3>Example Flower 0</h3>
             <p>Price: ₹200</p>
-            <a href="https://wa.me/917983332465?text=I want to order Example Flower 1 (₹200)" target="_blank">Order on WhatsApp</a>
+            <button onclick="likeProduct(0)">Like (<span id="like0">0</span>)</button>
+            
+            <div class="feedback-section">
+                <h4>Feedback</h4>
+                <input type="text" id="name0" placeholder="Your Name">
+                <textarea id="message0" placeholder="Write Feedback"></textarea>
+                <button onclick="submitFeedback(0)">Submit</button>
+                <div id="feedback-list1"></div>
+            </div>
         </div>
-        <div class="feedback-section">
-    <h3>Customer Feedback</h3>
 
-    <input type="text" id="name1" placeholder="Your Name"><br><br>
-    <textarea id="message1" placeholder="Write your feedback"></textarea><br><br>
-    <button onclick="submitFeedback('1')">Submit Feedback</button>
-
-    <div id="feedback-list1" class="feedback-list"></div>
-</div>
-
-
+        <!-- Product 1 -->
         <div class="product">
-            <img src="image1.jpeg" alt="Example Flower 1" onclick="openImage(this.src)">
-            <h3>Example Flower 2</h3>
+            <img src="image1.jpeg" onclick="openImage(this.src)" alt="Example Flower 1">
+            <h3>Example Flower 1</h3>
             <p>Price: ₹250</p>
-            <a href="https://wa.me/917983332465?text=I want to order Example Flower 2 (₹250)" target="_blank">Order on WhatsApp</a>
+            <button onclick="likeProduct(1)">Like (<span id="like1">0</span>)</button>
+
+            <div class="feedback-section">
+                <h4>Feedback</h4>
+                <input type="text" id="name1" placeholder="Your Name">
+                <textarea id="message1" placeholder="Write Feedback"></textarea>
+                <button onclick="submitFeedback(1)">Submit</button>
+                <div id="feedback-list1"></div>
+            </div>
         </div>
-        <div class="feedback-section">
-    <h3>Customer Feedback</h3>
 
-    <input type="text" id="name1" placeholder="Your Name"><br><br>
-    <textarea id="message1" placeholder="Write your feedback"></textarea><br><br>
-    <button onclick="submitFeedback('1')">Submit Feedback</button>
-
-    <div id="feedback-list1" class="feedback-list"></div>
-</div>
-
-
+        <!-- Product 2 -->
         <div class="product">
-            <img src="image2.jpeg" alt="Example Flower 2" onclick="openImage(this.src)">
-            <h3>Example Flower 3</h3>
+            <img src="image2.jpeg" onclick="openImage(this.src)" alt="Example Flower 2">
+            <h3>Example Flower 2</h3>
             <p>Price: ₹300</p>
-            <a href="https://wa.me/917983332465?text=I want to order Example Flower 3 (₹300)" target="_blank">Order on WhatsApp</a>
+            <button onclick="likeProduct(2)">Like (<span id="like2">0</span>)</button>
+
+            <div class="feedback-section">
+                <h4>Feedback</h4>
+                <input type="text" id="name2" placeholder="Your Name">
+                <textarea id="message2" placeholder="Write Feedback"></textarea>
+                <button onclick="submitFeedback(2)">Submit</button>
+                <div id="feedback-list2"></div>
+            </div>
         </div>
-        <div class="feedback-section">
-    <h3>Customer Feedback</h3>
 
-    <input type="text" id="name1" placeholder="Your Name"><br><br>
-    <textarea id="message1" placeholder="Write your feedback"></textarea><br><br>
-    <button onclick="submitFeedback('1')">Submit Feedback</button>
-
-    <div id="feedback-list1" class="feedback-list"></div>
-</div>
-
-
+        <!-- Product 3 -->
         <div class="product">
-            <img src="image3.jpeg" alt="Example Flower 3" onclick="openImage(this.src)">
-            <h3>Example Flower 4</h3>
+            <img src="image3.jpeg" onclick="openImage(this.src)" alt="Example Flower 3">
+            <h3>Example Flower 3</h3>
             <p>Price: ₹400</p>
-            <a href="https://wa.me/917983332465?text=I want to order Example Flower 4 (₹400)" target="_blank">Order on WhatsApp</a>
+            <button onclick="likeProduct(3)">Like (<span id="like3">0</span>)</button>
+
+            <div class="feedback-section">
+                <h4>Feedback</h4>
+                <input type="text" id="name3" placeholder="Your Name">
+                <textarea id="message4" placeholder="Write Feedback"></textarea>
+                <button onclick="submitFeedback(3)">Submit</button>
+                <div id="feedback-list3"></div>
+            </div>
         </div>
-        <div class="feedback-section">
-    <h3>Customer Feedback</h3>
-
-    <input type="text" id="name1" placeholder="Your Name"><br><br>
-    <textarea id="message1" placeholder="Write your feedback"></textarea><br><br>
-    <button onclick="submitFeedback('1')">Submit Feedback</button>
-
-    <div id="feedback-list1" class="feedback-list"></div>
-</div>
-
 
     </section>
 
-    <p style="margin-top: 30px; color: #888;">© 2025 Twist n Bloom. All Rights Reserved.</p>
+    <section class="custom-request">
+        <h2>Request Personalized Product</h2>
+        <a href="https://wa.me/917983332465" target="_blank" class="whatsapp-button">Request on WhatsApp</a>
+    </section>
 
-    <script>
-      function openImage(src) {
-        const newTab = window.open();
-        newTab.document.write('<img src="' + src + '" style="width:100%">');
-      }
-    </script>
-
-</body>
-</html>
+    <footer>
+        <p>© 2025 Twist'n'Bloom | All Rights Reserved</p>
+    </footer>
 
 <script>
-function submitFeedback(productId) {
-    const name = document.getElementById('name' + productId).value;
-    const message = document.getElementById('message' + productId).value;
+function openImage(src) {
+    window.open(src, '_blank');
+}
 
-    if (name && message) {
-        let feedbacks = JSON.parse(localStorage.getItem('feedbacks' + productId) || '[]');
-        feedbacks.push({ name, message });
-        localStorage.setItem('feedbacks' + productId, JSON.stringify(feedbacks));
-        showFeedback(productId);
+function likeProduct(id) {
+    let likeSpan = document.getElementById('like' + id);
+    let count = localStorage.getItem('like' + id) || 0;
+    count++;
+    likeSpan.innerText = count;
+    localStorage.setItem('like' + id, count);
+}
+
+window.onload = function() {
+    for(let i=1; i<=4; i++){
+        document.getElementById('like'+i).innerText = localStorage.getItem('like'+i) || 0;
+        loadFeedback(i);
     }
 }
 
-function showFeedback(productId) {
-    let feedbacks = JSON.parse(localStorage.getItem('feedbacks' + productId) || '[]');
-    let feedbackHTML = feedbacks.map(f => `<p><b>${f.name}</b>: ${f.message}</p>`).join('');
-    document.getElementById('feedback-list' + productId).innerHTML = feedbackHTML;
+function submitFeedback(id) {
+    let name = document.getElementById('name' + id).value;
+    let msg = document.getElementById('message' + id).value;
+    if(name && msg){
+        let oldFeedback = JSON.parse(localStorage.getItem('feedback'+id) || '[]');
+        oldFeedback.push({name:name, msg:msg});
+        localStorage.setItem('feedback'+id, JSON.stringify(oldFeedback));
+        loadFeedback(id);
+        document.getElementById('name' + id).value = "";
+        document.getElementById('message' + id).value = "";
+    }
 }
 
-// On Page Load
-showFeedback('1');
+function loadFeedback(id) {
+    let feedbacks = JSON.parse(localStorage.getItem('feedback'+id) || '[]');
+    let list = "";
+    feedbacks.forEach(f => {
+        list += `<p><strong>${f.name}</strong>: ${f.msg}</p>`;
+    });
+    document.getElementById('feedback-list'+id).innerHTML = list;
+}
 </script>
 
+</body>
+</html>
