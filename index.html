@@ -105,3 +105,27 @@
 
 </body>
 </html>
+
+<script>
+function submitFeedback(productId) {
+    const name = document.getElementById('name' + productId).value;
+    const message = document.getElementById('message' + productId).value;
+
+    if (name && message) {
+        let feedbacks = JSON.parse(localStorage.getItem('feedbacks' + productId) || '[]');
+        feedbacks.push({ name, message });
+        localStorage.setItem('feedbacks' + productId, JSON.stringify(feedbacks));
+        showFeedback(productId);
+    }
+}
+
+function showFeedback(productId) {
+    let feedbacks = JSON.parse(localStorage.getItem('feedbacks' + productId) || '[]');
+    let feedbackHTML = feedbacks.map(f => `<p><b>${f.name}</b>: ${f.message}</p>`).join('');
+    document.getElementById('feedback-list' + productId).innerHTML = feedbackHTML;
+}
+
+// On Page Load
+showFeedback('1');
+</script>
+
